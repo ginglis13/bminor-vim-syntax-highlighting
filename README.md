@@ -13,7 +13,7 @@ expressions to match things like strings, operators, numbers, etc., and highligh
 work as the [scanner](https://www3.nd.edu/~dthain/compilerbook/compilerbook.pdf#chapter.3) stage of the Bminor compiler.
 `ftdetect` just checks a file's extension (`*.bminor`) and uses the appropriate highlighting.
 
-vim reference docs: [](http://vimdoc.sourceforge.net/htmldoc/syntax.html)
+vim reference docs: [http://vimdoc.sourceforge.net/htmldoc/syntax.html](http://vimdoc.sourceforge.net/htmldoc/syntax.html)
 
 ## Example
 
