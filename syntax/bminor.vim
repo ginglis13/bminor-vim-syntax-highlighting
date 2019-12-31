@@ -28,19 +28,13 @@ syn keyword bminorBoolean true false
 
 " === Matches ===
 
-" c style comment TODO: MULTILINE not matching
-syn match bminorComment '\v\/\*([^\*]|[^\/])*\*\/'
-
-" cpp style comment
-syn match bminorComment '\v\/\/([^\n]*(\\\n)*)*$'
-
 syn match bminorInteger "\v[0-9]+"
 syn match bminorString  '\v\"([^\"\n\\]|\\\n|\\.){0,255}\"'
 syn match bminorChar "\v\'([^\\\']|\\.|�)\'"
 
 " Operators  TODO * and / get mixed up w comments
-"syntax match bminorOperator "\v\*"
-"syntax match bminorOperator "/"
+syntax match bminorOperator "\v\*"
+syntax match bminorOperator "/"
 syntax match bminorOperator "\v\+"
 syntax match bminorOperator "\v-"
 syntax match bminorOperator "\v\%"
@@ -57,6 +51,13 @@ syntax match bminorOperator "\v\|\|"
 " Statement
 " just doing blocks for statements
 syn region bminorStatement start="{" end="}" fold transparent contains=bminorNumber,bminorStatement,bminorOperator,bminorInteger,bminorComment,bminorAction,bminorBoolean,bminorType,bminorChar,bminorString,bminorConditional,bminorFor
+
+
+" C++ style comment
+syn region bminorComment start="\/\*" end="\*\/"
+
+" C style comment
+syn region bminorComment start="\/\/" end="$"
 
 
 " Put it all together
