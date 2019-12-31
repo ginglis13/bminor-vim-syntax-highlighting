@@ -17,10 +17,4 @@ vim reference docs: [http://vimdoc.sourceforge.net/htmldoc/syntax.html](http://v
 
 ## Example
 
-![](https://yld.me/raw/VKQ.png)
-
-
-## todo
-
-- multiline C-style comments not being caught in regex
-- multiply and divide operators conflict with C-style comments
+![](https://yld.me/raw/rnK.png)
