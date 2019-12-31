@@ -17,7 +17,7 @@ vim reference docs: [http://vimdoc.sourceforge.net/htmldoc/syntax.html](http://v
 
 ## Example
 
-![](https://yld.me/raw/aHy8.png)
+![](https://yld.me/raw/VKQ.png)
 
 
 ## todo
