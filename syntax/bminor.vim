@@ -44,7 +44,7 @@ syntax match bminorOperator "\v\="
 syntax match bminorOperator "\v\!"
 syntax match bminorOperator "\v\&\&"
 syntax match bminorOperator "\v\|\|"
-
+syntax match bminorOperator "\v\^"
 
 " === Regions ===
 
