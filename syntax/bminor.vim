@@ -28,10 +28,6 @@ syn keyword bminorBoolean true false
 
 " === Matches ===
 
-syn match bminorString  '\v\"([^\"\n\\]|\\\n|\\.){0,255}\"'
-syn match bminorChar "\v\'([^\\\']|\\.|�)\'"
-syn match bminorIdent "[a-zA-Z_][a-zA-Z0-9_]*"
-
 " Operators  TODO * and / get mixed up w comments
 syntax match bminorOperator "\v\*"
 syntax match bminorOperator "/"
@@ -46,7 +42,11 @@ syntax match bminorOperator "\v\&\&"
 syntax match bminorOperator "\v\|\|"
 syntax match bminorOperator "\v\^"
 
+" Constants & identifiers
+syn match bminorString  '\v\"([^\"\n\\]|\\\n|\\.){0,255}\"'
+syn match bminorChar "\v\'([^\\\']|\\.|�)\'"
 syn match bminorInteger "\v(\+|-)?[0-9]+"
+syn match bminorIdent "[a-zA-Z_][a-zA-Z0-9_]*"
 
 " === Regions ===
 
@@ -79,4 +79,3 @@ hi def link bminorAction Keyword
 hi def link bminorStatement Statement
 " Make this bminorIdent Identifer if you want your identifiers highlighted
 hi def link bminorIdent None
-
