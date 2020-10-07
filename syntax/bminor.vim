@@ -28,7 +28,6 @@ syn keyword bminorBoolean true false
 
 " === Matches ===
 
-syn match bminorInteger "\v[0-9]+"
 syn match bminorString  '\v\"([^\"\n\\]|\\\n|\\.){0,255}\"'
 syn match bminorChar "\v\'([^\\\']|\\.|�)\'"
 syn match bminorIdent "[a-zA-Z_][a-zA-Z0-9_]*"
@@ -46,6 +45,8 @@ syntax match bminorOperator "\v\!"
 syntax match bminorOperator "\v\&\&"
 syntax match bminorOperator "\v\|\|"
 syntax match bminorOperator "\v\^"
+
+syn match bminorInteger "\v(\+|-)?[0-9]+"
 
 " === Regions ===
 
