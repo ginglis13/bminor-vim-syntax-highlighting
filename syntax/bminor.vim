@@ -18,7 +18,7 @@ endif
 
 " === Keywords ===
 
-syn keyword bminorType array auto boolean char integer string void
+syn keyword bminorType array boolean char integer string void map
 syn keyword bminorFunction function
 syn keyword bminorAction print return
 syn keyword bminorConditional else if
